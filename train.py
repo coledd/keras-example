@@ -49,11 +49,11 @@ print(model.evaluate(data, labels))
 print(model.metrics_names)
 
 # Predict
-#print(model.predict(data))
+print(model.predict(data), labels)
 #print(labels)
 
-for i in range(len(labels)):
-	model.predict(data)[i][0], labels[i]
+#for i in range(len(labels)):
+#	print(model.predict(data)[i][0], labels[i])
 
 #model.predict(np.array([[1.2,2.3]]))
 
