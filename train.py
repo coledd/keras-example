@@ -13,6 +13,9 @@ dataset = np.loadtxt('moon_data.csv', delimiter=',')
 data = dataset[:,0:2]
 labels = dataset[:,2]
 
+plt.scatter(data[:,0], data[:,1], s=40, c=labels, cmap=plt.cm.Spectral)
+plt.show()
+
 # Split the data into training and test data
 data_train, data_test, labels_train, labels_test = train_test_split(data, labels)
 
