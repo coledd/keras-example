@@ -6,7 +6,6 @@ from keras.layers import Dense, Dropout
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-#from keras import initializers
 
 # Load the training data, format: x, y, label
 dataset = np.loadtxt('moon_data.csv', delimiter=',')
